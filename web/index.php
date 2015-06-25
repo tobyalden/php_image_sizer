@@ -6,7 +6,7 @@
   // file_put_contents($fn,$img);
   // echo $fn;
   //
-  // $head = array_change_key_case(get_headers('https://i.ytimg.com/vi/xS3wQEGlOGU/1.jpg', TRUE));
-  // $filesize = $head['content-length'];
-  echo "hello world!";
+  $head = array_change_key_case(get_headers('https://i.ytimg.com/vi/xS3wQEGlOGU/1.jpg', TRUE));
+  $filesize = $head['content-length'];
+  echo $filesize;
 ?>
